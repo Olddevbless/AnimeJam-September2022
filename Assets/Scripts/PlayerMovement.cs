@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(xOffset, transform.position.y) ;
         }
-        if (transform.position.x < -yOffset)
+        if (transform.position.x < -xOffset)
         {
             transform.position = new Vector3(-xOffset, transform.position.y);
         }
