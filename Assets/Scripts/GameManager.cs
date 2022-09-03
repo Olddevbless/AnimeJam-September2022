@@ -13,9 +13,12 @@ public class GameManager : MonoBehaviour
     public bool pauseMenuIsActive;
     public GameManager instance;
     public int score;
+    public GameObject gameOver;
+    [SerializeField] TextMeshProUGUI gameOverScoreText;
     [SerializeField] TextMeshProUGUI scoreText;
     void Awake()
     {
+        gameOver.SetActive(false);
         pauseMenuIsActive = false;
         current = this;
         if (instance != null)
@@ -37,6 +40,10 @@ public class GameManager : MonoBehaviour
             PauseMenu();
         }
         scoreText.text = ""+score;
+        if (GameObject.FindObjectOfType<PlayerMovement>().playerHealth <= 0)
+        {
+            StartCoroutine(GameOver());
+        }
     }
 
     
@@ -71,4 +78,15 @@ public class GameManager : MonoBehaviour
     {
         score += scoreValue;
     }
+    public IEnumerator GameOver()
+    {
+        Time.timeScale = 0;
+        gameOverScoreText.text = "Your Score is:" + score;
+        gameOver.SetActive(true);
+        PauseMenu();
+        yield return new WaitForSeconds(2f);
+        Time.timeScale = 1;
+        
+    }
+ 
 }
