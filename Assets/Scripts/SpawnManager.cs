@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
     Vector3 spawnPosition;
     void Start()
     {
-        
+        InvokeRepeating("SpawnEnemies", enemiesToSpawn, spawnDelay);
     }
 
     // Update is called once per frame

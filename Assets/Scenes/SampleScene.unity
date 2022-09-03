@@ -305,6 +305,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &581474867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7610543267367411831, guid: 578702ecb2dd0444291653d73f8f1a39, type: 3}
+  m_PrefabInstance: {fileID: 7610543266802727492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &611954694
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +742,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5084687863219407736, guid: e71a7aa73ad4a1940b8920fe2f2e8099, type: 3}
+      propertyPath: enemyPrefab
+      value: 
+      objectReference: {fileID: 581474867}
+    - target: {fileID: 5084687863219407736, guid: e71a7aa73ad4a1940b8920fe2f2e8099, type: 3}
+      propertyPath: spawnDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084687863219407736, guid: e71a7aa73ad4a1940b8920fe2f2e8099, type: 3}
+      propertyPath: enemiesToSpawn
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5084687863219407737, guid: e71a7aa73ad4a1940b8920fe2f2e8099, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2283789
