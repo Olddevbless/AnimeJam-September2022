@@ -7,8 +7,10 @@ public class Enemy : MonoBehaviour
     GameObject player;
     public int scoreValue;
     public int enemySpeed;
-    void Start()
+    GameManager gameManager;
+    void Awake()
     {
+        gameManager = FindObjectOfType<GameManager>();
         player = FindObjectOfType<PlayerMovement>().gameObject;
     }
 
@@ -24,6 +26,7 @@ public class Enemy : MonoBehaviour
         {
             GameManager.FindObjectOfType<GameManager>().IncreaseScore(scoreValue);
             player.GetComponent<PlayerMovement>().powerupCharge++;
+            gameManager.IncreaseScore(scoreValue);
             Destroy(this);
         }
         player.GetComponent<PlayerMovement>().TakeDamage(1);

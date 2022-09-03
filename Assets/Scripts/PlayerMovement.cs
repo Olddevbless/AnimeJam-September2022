@@ -6,17 +6,17 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField] int speedNormal = 1;
-    [SerializeField] int speedPowerUp = 5;
+    [SerializeField] int speedPowerUp = 5; 
     [SerializeField] int currentSpeed;
     [SerializeField] Vector2 mousePos;
-    [SerializeField] float yOffset;
-    [SerializeField] float xOffset;
+    [SerializeField] float yOffset; // top/bottom level boundaries
+    [SerializeField] float xOffset; // left/right level boundaries
     GameObject enemies;
-    public RigidbodyConstraints2D enemiesRBConstraints;
-    public GameObject kickSprite;
-    public GameObject punchSprite;
-    public int playerHealth;
-    public int powerupCharge;
+    public RigidbodyConstraints2D enemiesRBConstraints; // to freeze enemies
+    public GameObject kickSprite; // heavyattack sprite
+    public GameObject punchSprite; // lightattack sprite
+    public int playerHealth; // determines how many hits the player can take, each enemy deals 1 damage
+    public int powerupCharge; // how many kills the player needs to execute a powerup
     Slider powerUpSlider;
     [SerializeField] int playerMaxHealth;
     float heavyAttackCD = 2f;

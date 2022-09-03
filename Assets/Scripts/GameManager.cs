@@ -69,6 +69,6 @@ public class GameManager : MonoBehaviour
     }
     public void IncreaseScore(int scoreValue)
     {
-
+        score += scoreValue;
     }
 }
