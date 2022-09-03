@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject punchSprite;
     public int playerHealth;
     public int powerupCharge;
+    Slider powerUpSlider;
     [SerializeField] int playerMaxHealth;
     float heavyAttackCD = 2f;
     float heavyAttackCount;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        powerUpSlider = FindObjectOfType<Slider>();
         currentSpeed = speedNormal;
         playerHealth = playerMaxHealth;
         rb = this.GetComponent<Rigidbody2D>();
@@ -38,13 +40,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
+        powerUpSlider.value = powerupCharge;
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         if (powerupCharge >= 3 && Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine("PowerUp");
+            powerupCharge = 0;
         }
 
     }
