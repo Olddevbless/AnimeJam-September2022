@@ -22,9 +22,9 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb.constraints = RigidbodyConstraints2D.None;
         playerHealth = playerMaxHealth;
         rb = this.GetComponent<Rigidbody2D>();
+        rb.constraints = RigidbodyConstraints2D.None;
         aim = gameObject.GetComponentInChildren<Transform>();
         cam = Camera.main;
     }
@@ -64,13 +64,13 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetAxisRaw("Fire2")>0 && heavyAttackCount<=0f)
         {
-            kickSprite.SetActive(true);
+            StartCoroutine("HeavyAttackDuration");
             heavyAttackCount = heavyAttackCD;
         }
-        else
-        {
-            kickSprite.SetActive(false);
-        }
+        //else
+        //{
+        //    kickSprite.SetActive(false);
+        //}
         if (heavyAttackCount>0 )
         {
             
@@ -78,13 +78,13 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetAxisRaw("Fire1") > 0 && lightAttackCount <= 0f)
         {
-            punchSprite.SetActive(true);
+            StartCoroutine("LightAttackDuration");
             lightAttackCount = lightAttackCD;
         }
-        else
-        {
-            punchSprite.SetActive(false);
-        }
+        //else
+        //{
+        //    punchSprite.SetActive(false);
+        //}
         if (lightAttackCount>0)
         {
             lightAttackCount -= Time.deltaTime;
@@ -100,5 +100,17 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }
+    }
+    IEnumerator HeavyAttackDuration()
+    {
+        kickSprite.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        kickSprite.SetActive(false);
+    }
+    IEnumerator LightAttackDuration()
+    {
+        punchSprite.SetActive(true);
+        yield return new WaitForSeconds(0.2f);
+        punchSprite.SetActive(false);
     }
 }
