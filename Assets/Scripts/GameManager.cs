@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     
     void Awake()
     {
+        pauseMenuIsActive = false;
         current = this;
         if (instance != null)
         {
@@ -54,13 +55,14 @@ public class GameManager : MonoBehaviour
         }
 
     }
-    void ExitApplication()
+    public void ExitApplication()
     {
         Application.Quit();
     }
-    void Resume()
+    public void Resume()
     {
         pauseMenuIsActive = false;
         pauseMenu.SetActive(false);
+        Time.timeScale = 1;
     }
 }

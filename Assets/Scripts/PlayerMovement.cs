@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Transform aim;
     Vector2 movement;
-    // Start is called before the first frame update
+    
     void Start()
     {
         playerHealth = playerMaxHealth;
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         cam = Camera.main;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -67,10 +67,7 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine("HeavyAttackDuration");
             heavyAttackCount = heavyAttackCD;
         }
-        //else
-        //{
-        //    kickSprite.SetActive(false);
-        //}
+        
         if (heavyAttackCount>0 )
         {
             
@@ -81,16 +78,13 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine("LightAttackDuration");
             lightAttackCount = lightAttackCD;
         }
-        //else
-        //{
-        //    punchSprite.SetActive(false);
-        //}
+        
         if (lightAttackCount>0)
         {
             lightAttackCount -= Time.deltaTime;
         }
     }
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         playerHealth -= damage;
     }
