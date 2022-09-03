@@ -20,7 +20,14 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.GetComponent<PlayerMovement>().kickSprite|| collision.gameObject.GetComponent<PlayerMovement>().punchSprite)
+        {
+            GameManager.FindObjectOfType<GameManager>().IncreaseScore(scoreValue);
+            player.GetComponent<PlayerMovement>().powerupCharge++;
+            Destroy(this);
+        }
         player.GetComponent<PlayerMovement>().TakeDamage(1);
+        GameManager.FindObjectOfType<GameManager>().IncreaseScore(scoreValue);
         Destroy(this);
     }
 }

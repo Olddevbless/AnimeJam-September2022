@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour
     public bool pauseMenuIsActive;
     public GameManager instance;
     public int score;
-    
+    [SerializeField] TextMeshProUGUI scoreText;
     void Awake()
     {
         pauseMenuIsActive = false;
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
         {
             PauseMenu();
         }
+        scoreText.text = ""+score;
     }
 
     
@@ -64,5 +66,9 @@ public class GameManager : MonoBehaviour
         pauseMenuIsActive = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+    }
+    public void IncreaseScore(int scoreValue)
+    {
+
     }
 }

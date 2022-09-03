@@ -7,9 +7,10 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] int speed = 1;
     [SerializeField] Vector2 mousePos;
-    [SerializeField] GameObject kickSprite;
-    [SerializeField] GameObject punchSprite;
+    public GameObject kickSprite;
+    public GameObject punchSprite;
     public int playerHealth;
+    public int powerupCharge;
     [SerializeField] int playerMaxHealth;
     float heavyAttackCD = 2f;
     float heavyAttackCount;
@@ -36,6 +37,10 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        if (powerupCharge >=3 && Input.GetKeyDown(KeyCode.Space))
+        {
+            
+        }
     }
     private void FixedUpdate()
     {
@@ -107,4 +112,5 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         punchSprite.SetActive(false);
     }
+   
 }
