@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &436620634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6056239408692839176, guid: 007f8c6bec45ffc4a902af32d861b083, type: 3}
+  m_PrefabInstance: {fileID: 6056239409129164370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +217,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &581474867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7610543267367411831, guid: 578702ecb2dd0444291653d73f8f1a39, type: 3}
+  m_PrefabInstance: {fileID: 7610543266802727492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &581474868
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581474867}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1063839069
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6056239409282452412, guid: 007f8c6bec45ffc4a902af32d861b083, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 436620634}
     - target: {fileID: 6056239409282452413, guid: 007f8c6bec45ffc4a902af32d861b083, type: 3}
       propertyPath: m_LocalPosition.x
       value: 396.5

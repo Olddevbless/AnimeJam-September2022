@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
-    [SerializeField] int speed = 1;
+
+    [SerializeField] int speedNormal = 1;
+    [SerializeField] int speedPowerUp = 5;
+    [SerializeField] int currentSpeed;
     [SerializeField] Vector2 mousePos;
+    GameObject enemies;
+    public RigidbodyConstraints2D enemiesRBConstraints;
     public GameObject kickSprite;
     public GameObject punchSprite;
     public int playerHealth;
@@ -20,9 +24,10 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Transform aim;
     Vector2 movement;
-    
+
     void Start()
     {
+        currentSpeed = speedNormal;
         playerHealth = playerMaxHealth;
         rb = this.GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.None;
@@ -30,17 +35,18 @@ public class PlayerMovement : MonoBehaviour
         cam = Camera.main;
     }
 
-    
+
     void Update()
     {
         
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        if (powerupCharge >=3 && Input.GetKeyDown(KeyCode.Space))
+        if (powerupCharge >= 3 && Input.GetKeyDown(KeyCode.Space))
         {
-            
+            StartCoroutine("PowerUp");
         }
+
     }
     private void FixedUpdate()
     {
@@ -51,31 +57,31 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * currentSpeed * Time.fixedDeltaTime);
 
     }
 
     void MouseAim()
     {
-       
+
         Vector2 lookDir = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg -90f ;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
-        
+
     }
     void Attack()
     {
-        
-        
-        if (Input.GetAxisRaw("Fire2")>0 && heavyAttackCount<=0f)
+
+
+        if (Input.GetAxisRaw("Fire2") > 0 && heavyAttackCount <= 0f)
         {
             StartCoroutine("HeavyAttackDuration");
             heavyAttackCount = heavyAttackCD;
         }
-        
-        if (heavyAttackCount>0 )
+
+        if (heavyAttackCount > 0)
         {
-            
+
             heavyAttackCount -= Time.deltaTime;
         }
         if (Input.GetAxisRaw("Fire1") > 0 && lightAttackCount <= 0f)
@@ -83,8 +89,8 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine("LightAttackDuration");
             lightAttackCount = lightAttackCD;
         }
-        
-        if (lightAttackCount>0)
+
+        if (lightAttackCount > 0)
         {
             lightAttackCount -= Time.deltaTime;
         }
@@ -95,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Death()
     {
-        if (playerHealth <=0)
+        if (playerHealth <= 0)
         {
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }
@@ -111,6 +117,18 @@ public class PlayerMovement : MonoBehaviour
         punchSprite.SetActive(true);
         yield return new WaitForSeconds(0.2f);
         punchSprite.SetActive(false);
+    }
+    IEnumerator PowerUp()
+    {
+        enemiesRBConstraints = FindObjectOfType<Enemy>().GetComponent<RigidbodyConstraints2D>();
+        enemiesRBConstraints = RigidbodyConstraints2D.FreezeAll;
+        currentSpeed =speedPowerUp;
+        enemies = FindObjectOfType<Enemy>().gameObject;
+        yield return new WaitForSeconds(5f);
+        enemiesRBConstraints = RigidbodyConstraints2D.None;
+        currentSpeed = speedNormal;
+        
+        
     }
    
 }
