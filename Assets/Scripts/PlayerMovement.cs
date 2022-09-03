@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] int speedPowerUp = 5;
     [SerializeField] int currentSpeed;
     [SerializeField] Vector2 mousePos;
+    [SerializeField] float yOffset;
+    [SerializeField] float xOffset;
     GameObject enemies;
     public RigidbodyConstraints2D enemiesRBConstraints;
     public GameObject kickSprite;
@@ -48,6 +50,22 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine("PowerUp");
             powerupCharge = 0;
+        }
+        if (transform.position.y> yOffset)
+        {
+            transform.position = new Vector3 (transform.position.x,yOffset);
+        }
+        if (transform.position.y< -yOffset)
+        {
+            transform.position = new Vector3 (transform.position.x,-yOffset);
+        }
+        if (transform.position.x > xOffset)
+        {
+            transform.position = new Vector3(xOffset, transform.position.y) ;
+        }
+        if (transform.position.x < -yOffset)
+        {
+            transform.position = new Vector3(-xOffset, transform.position.y);
         }
 
     }
