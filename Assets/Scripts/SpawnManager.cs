@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
     Vector3 spawnPosition;
     void Start()
     {
-        InvokeRepeating("SpawnEnemies", enemiesToSpawn, spawnDelay);
+        InvokeRepeating("SpawnEnemies", 2f, spawnDelay);
     }
 
     // Update is called once per frame
@@ -21,10 +21,10 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnEnemies()
     {
-        Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+        Instantiate(enemyPrefab, this.transform.position, Quaternion.identity);
     }
     void SpawnBoss()
     {
-        Instantiate(bossPrefab, spawnPosition, Quaternion.identity);
+        Instantiate(bossPrefab, transform.position, Quaternion.identity) ;
     }
 }

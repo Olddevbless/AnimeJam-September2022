@@ -129,15 +129,20 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator HeavyAttackDuration()
     {
-        kickSprite.SetActive(true);
+        
+        kickSprite.GetComponent<BoxCollider2D>().enabled = true;
+        kickSprite.GetComponent<SpriteRenderer>().enabled = true;
         yield return new WaitForSeconds(0.5f);
-        kickSprite.SetActive(false);
+        kickSprite.GetComponent<BoxCollider2D>().enabled = false;
+        kickSprite.GetComponent<SpriteRenderer>().enabled = false;
     }
     IEnumerator LightAttackDuration()
     {
-        punchSprite.SetActive(true);
+        punchSprite.GetComponent<BoxCollider2D>().enabled = true;
+        punchSprite.GetComponent<SpriteRenderer>().enabled = true;
         yield return new WaitForSeconds(0.2f);
-        punchSprite.SetActive(false);
+        punchSprite.GetComponent<BoxCollider2D>().enabled = false;
+        punchSprite.GetComponent<SpriteRenderer>().enabled = false;
     }
     IEnumerator PowerUp()
     {

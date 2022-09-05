@@ -1,0 +1,958 @@
+fileFormatVersion: 2
+guid: 436092a2f345cee45bcd4def4f6569ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3878709743613370340
+    second: nerd plus attack finished_0
+  - first:
+      213: -1012636793530406100
+    second: nerd plus attack finished_1
+  - first:
+      213: 6135241488704964974
+    second: nerd plus attack finished_2
+  - first:
+      213: -6818482796062758458
+    second: nerd plus attack finished_3
+  - first:
+      213: -8271397598175621684
+    second: nerd plus attack finished_4
+  - first:
+      213: 7067221862652256863
+    second: nerd plus attack finished_5
+  - first:
+      213: -4068711184851122193
+    second: nerd plus attack finished_6
+  - first:
+      213: 4475749783680394965
+    second: nerd plus attack finished_7
+  - first:
+      213: -3031079824187984795
+    second: nerd plus attack finished_8
+  - first:
+      213: 4754852352432355601
+    second: nerd plus attack finished_9
+  - first:
+      213: -5648178381233824897
+    second: nerd plus attack finished_10
+  - first:
+      213: 3459953948061825090
+    second: nerd plus attack finished_11
+  - first:
+      213: -2463791425422316942
+    second: nerd plus attack finished_12
+  - first:
+      213: 2961758245986909196
+    second: nerd plus attack finished_13
+  - first:
+      213: -3513550021760332073
+    second: nerd plus attack finished_14
+  - first:
+      213: -284207097992067723
+    second: nerd plus attack finished_15
+  - first:
+      213: -3691061660328119350
+    second: nerd plus attack finished_16
+  - first:
+      213: 3065831232311825
+    second: nerd plus attack finished_17
+  - first:
+      213: -3352060154993750250
+    second: nerd plus attack finished_18
+  - first:
+      213: 2246490494219071213
+    second: nerd plus attack finished_19
+  - first:
+      213: -5428668646206355770
+    second: nerd plus attack finished_20
+  - first:
+      213: -909329274416691528
+    second: nerd plus attack finished_21
+  - first:
+      213: -7015217607099087222
+    second: nerd plus attack finished_22
+  - first:
+      213: 6576246227297217082
+    second: nerd plus attack finished_23
+  - first:
+      213: 1065714116653386610
+    second: nerd plus attack finished_24
+  - first:
+      213: -5600869400288918296
+    second: nerd plus attack finished_25
+  - first:
+      213: 531757587755862718
+    second: nerd plus attack finished_26
+  - first:
+      213: -7993954917253938810
+    second: nerd plus attack finished_27
+  - first:
+      213: 9196015584626757266
+    second: nerd plus attack finished_28
+  - first:
+      213: -2241618285966443804
+    second: nerd plus attack finished_29
+  - first:
+      213: -9046501389521681720
+    second: nerd plus attack finished_30
+  - first:
+      213: -5693329220336647803
+    second: nerd plus attack finished_31
+  - first:
+      213: -8961084639441294727
+    second: nerd plus attack finished_32
+  - first:
+      213: -5108723421156416702
+    second: nerd plus attack finished_33
+  - first:
+      213: 1325466095255654865
+    second: nerd plus attack finished_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nerd plus attack finished_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 318
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c102419d90e0c2ac0800000000000000
+      internalID: -3878709743613370340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 318
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b2123933462f1f0800000000000000
+      internalID: -1012636793530406100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 318
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e698f79c0a1c42550800000000000000
+      internalID: 6135241488704964974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 318
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c92199d502ef51a0800000000000000
+      internalID: -6818482796062758458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 286
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd09bc45b7163d80800000000000000
+      internalID: -8271397598175621684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 286
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52234027d0d31260800000000000000
+      internalID: 7067221862652256863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 286
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe74a4dfbb80987c0800000000000000
+      internalID: -4068711184851122193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 286
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d62dc7f6be0d1e30800000000000000
+      internalID: 4475749783680394965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 254
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564fb6195f07fe5d0800000000000000
+      internalID: -3031079824187984795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 254
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1193922b501acf140800000000000000
+      internalID: 4754852352432355601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_10
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 254
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b548600b3ad91b0800000000000000
+      internalID: -5648178381233824897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_11
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 254
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2487f6db8c9340030800000000000000
+      internalID: 3459953948061825090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_12
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 222
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27aac0790cadecdd0800000000000000
+      internalID: -2463791425422316942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_13
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 222
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c32a2ce674a1920800000000000000
+      internalID: 2961758245986909196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_14
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 222
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dec86ceedc5d3fc0800000000000000
+      internalID: -3513550021760332073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_15
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 222
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575c981762b4e0cf0800000000000000
+      internalID: -284207097992067723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_16
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 190
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3341cd9f6b6ccc0800000000000000
+      internalID: -3691061660328119350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 190
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1121b857b54ea0000800000000000000
+      internalID: 3065831232311825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_18
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 190
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f4bdb8c071b71d0800000000000000
+      internalID: -3352060154993750250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_19
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 190
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee283bb3332d2f10800000000000000
+      internalID: 2246490494219071213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 158
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6c19be0ae79a4b0800000000000000
+      internalID: -5428668646206355770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_21
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 158
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6878eb7d96163f0800000000000000
+      internalID: -909329274416691528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_22
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 158
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a860bca21c0f4ae90800000000000000
+      internalID: -7015217607099087222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_23
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 158
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3aad8de915834b50800000000000000
+      internalID: 6576246227297217082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_24
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 126
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b8e3bb75d2ace00800000000000000
+      internalID: 1065714116653386610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 126
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e48c6284f6b542b0800000000000000
+      internalID: -5600869400288918296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_26
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 126
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba8ecc65be216700800000000000000
+      internalID: 531757587755862718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_27
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 126
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68187964b54cf0190800000000000000
+      internalID: -7993954917253938810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_28
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 37
+        width: 16
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e42ae937fce9f70800000000000000
+      internalID: 9196015584626757266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 94
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea33f6ab0c24e0e0800000000000000
+      internalID: -2241618285966443804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_30
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 94
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c28b79aaee547280800000000000000
+      internalID: -9046501389521681720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_31
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 94
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5818b781d3b3df0b0800000000000000
+      internalID: -5693329220336647803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_32
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 68
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a64ef8ff4d3a380800000000000000
+      internalID: -8961084639441294727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_33
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 69
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243e04a9d1b2a19b0800000000000000
+      internalID: -5108723421156416702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerd plus attack finished_34
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 33
+        width: 38
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d199891460056210800000000000000
+      internalID: 1325466095255654865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

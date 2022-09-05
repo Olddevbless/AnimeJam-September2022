@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
     public int scoreValue;
     public int enemySpeed;
     GameManager gameManager;
+    [SerializeField] float yOffset;
+    [SerializeField] float xOffset;
     void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -17,20 +19,36 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed);
+        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed*Time.deltaTime);
+        if (transform.position.y > yOffset)
+        {
+            transform.position = new Vector3(transform.position.x, yOffset);
+        }
+        if (transform.position.y < -yOffset)
+        {
+            transform.position = new Vector3(transform.position.x, -yOffset);
+        }
+        if (transform.position.x > xOffset)
+        {
+            transform.position = new Vector3(xOffset, transform.position.y);
+        }
+        if (transform.position.x < -xOffset)
+        {
+            transform.position = new Vector3(-xOffset, transform.position.y);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<PlayerMovement>().kickSprite|| collision.gameObject.GetComponent<PlayerMovement>().punchSprite)
+        Debug.Log(collision.collider.gameObject.name);
+        if (collision.gameObject.CompareTag("Player"))
         {
+            player.GetComponent<PlayerMovement>().TakeDamage(1);
             GameManager.FindObjectOfType<GameManager>().IncreaseScore(scoreValue);
-            player.GetComponent<PlayerMovement>().powerupCharge++;
-            gameManager.IncreaseScore(scoreValue);
             Destroy(this);
+
         }
-        player.GetComponent<PlayerMovement>().TakeDamage(1);
-        GameManager.FindObjectOfType<GameManager>().IncreaseScore(scoreValue);
-        Destroy(this);
+
+
     }
 }
