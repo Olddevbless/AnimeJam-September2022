@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float yOffset; // top/bottom level boundaries
     [SerializeField] float xOffset; // left/right level boundaries
     GameObject enemies;
-    public RigidbodyConstraints2D enemiesRBConstraints; // to freeze enemies
+    public RigidbodyConstraints2D[] enemiesRBConstraints; // to freeze enemies
     public GameObject kickSprite; // heavyattack sprite
     public GameObject punchSprite; // lightattack sprite
     public int playerHealth; // determines how many hits the player can take, each enemy deals 1 damage
@@ -24,16 +24,21 @@ public class PlayerMovement : MonoBehaviour
     float lightAttackCD = 0.5f;
     float lightAttackCount;
     public Camera cam;
-    Rigidbody2D rb;
+    [SerializeField] Rigidbody2D rb;
     Transform aim;
     Vector2 movement;
-
+    [SerializeField] GameObject playerModel;
+    [SerializeField] float angle;
+    [SerializeField] string animationRotation;
+    [SerializeField] Animator playerAnimator;
+   
     void Start()
     {
+        
         powerUpSlider = FindObjectOfType<Slider>();
         currentSpeed = speedNormal;
         playerHealth = playerMaxHealth;
-        rb = this.GetComponent<Rigidbody2D>();
+        
         rb.constraints = RigidbodyConstraints2D.None;
         aim = gameObject.GetComponentInChildren<Transform>();
         cam = Camera.main;
@@ -42,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        playerModel.transform.rotation = Quaternion.Euler(0, 0, 0);
         powerUpSlider.value = powerupCharge;
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
@@ -67,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(-xOffset, transform.position.y);
         }
+        
 
     }
     private void FixedUpdate()
@@ -86,8 +93,31 @@ public class PlayerMovement : MonoBehaviour
     {
 
         Vector2 lookDir = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+        angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
+        playerAnimator.SetFloat("angle", angle);
+        if (angle < -130 && angle > -230)
+        {
+            animationRotation = "Down";
+            playerAnimator.SetInteger("Rotation", 3);
+            
+        }
+        if (angle > -130 && angle < -45)
+        {
+            animationRotation = "Right";
+            playerAnimator.SetInteger("Rotation", 2);
+
+        }
+        if (angle> -45&& angle<45)
+        {
+            animationRotation = "Up";
+            playerAnimator.SetInteger("Rotation", 1);
+        }
+        if ((angle >45 && angle<90) || (angle <-230 && angle>-270))
+        {
+            animationRotation = "Left";
+            playerAnimator.SetInteger("Rotation", 4);
+        }
 
     }
     void Attack()
@@ -146,12 +176,21 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator PowerUp()
     {
-        enemiesRBConstraints = FindObjectOfType<Enemy>().GetComponent<RigidbodyConstraints2D>();
-        enemiesRBConstraints = RigidbodyConstraints2D.FreezeAll;
+        enemiesRBConstraints = FindObjectsOfType<Enemy>().GetComponent<RigidbodyConstraints2D>();
+        for (int i = 0; i<enemiesRBConstraints.Length; i++)
+        {
+            enemiesRBConstraints[i] = RigidbodyConstraints2D.FreezeAll;
+        }
+        playerAnimator.SetBool("isPoweredUp", true);
         currentSpeed =speedPowerUp;
         enemies = FindObjectOfType<Enemy>().gameObject;
         yield return new WaitForSeconds(5f);
-        enemiesRBConstraints = RigidbodyConstraints2D.None;
+        playerAnimator.SetBool("isPoweredUp", false);
+        for (int i =0; i<enemiesRBConstraints.Length; i++)
+        {
+            enemiesRBConstraints[i] = RigidbodyConstraints2D.None;
+        }
+        
         currentSpeed = speedNormal;
         
         

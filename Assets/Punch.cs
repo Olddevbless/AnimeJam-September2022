@@ -8,6 +8,7 @@ public class Punch : MonoBehaviour
     GameManager gameManager;
     private void Awake()
     {
+        player = FindObjectOfType<PlayerMovement>().gameObject;
         Debug.Log(GameObject.FindObjectOfType<GameManager>().enabled);
         gameManager = FindObjectOfType<GameManager>();
     }
@@ -18,6 +19,7 @@ public class Punch : MonoBehaviour
         Debug.Log(other.gameObject.name);
         if (other.CompareTag("Enemy"))
         {
+            player.GetComponent<PlayerMovement>().powerupCharge++;
             gameManager.IncreaseScore(other.gameObject.GetComponent<Enemy>().scoreValue);
             Destroy(other.gameObject);
         }
