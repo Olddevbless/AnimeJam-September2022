@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     void Awake()
     {
-        Debug.Log(GameObject.FindObjectOfType<GameManager>().enabled);
+        
         gameOver.SetActive(false);
         pauseMenuIsActive = false;
         current = this;

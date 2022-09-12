@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float yOffset; // top/bottom level boundaries
     [SerializeField] float xOffset; // left/right level boundaries
     GameObject enemies;
-    public RigidbodyConstraints2D[] enemiesRBConstraints; // to freeze enemies
+    public Enemy[] enemiesArray; // to freeze enemies
     public GameObject kickSprite; // heavyattack sprite
     public GameObject punchSprite; // lightattack sprite
     public int playerHealth; // determines how many hits the player can take, each enemy deals 1 damage
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         if (powerupCharge >= 3 && Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine("PowerUp");
+            StartCoroutine(PowerUp());
             powerupCharge = 0;
         }
         if (transform.position.y> yOffset)
@@ -176,21 +176,24 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator PowerUp()
     {
-        enemiesRBConstraints = FindObjectsOfType<Enemy>().GetComponent<RigidbodyConstraints2D>();
-        for (int i = 0; i<enemiesRBConstraints.Length; i++)
+        enemiesArray =  FindObjectsOfType<Enemy>();
+        for (int i = 0; i<enemiesArray.Length; i++)
         {
-            enemiesRBConstraints[i] = RigidbodyConstraints2D.FreezeAll;
+            enemiesArray[i].playerIsPoweredUp = true;
+            
         }
         playerAnimator.SetBool("isPoweredUp", true);
         currentSpeed =speedPowerUp;
         enemies = FindObjectOfType<Enemy>().gameObject;
         yield return new WaitForSeconds(5f);
         playerAnimator.SetBool("isPoweredUp", false);
-        for (int i =0; i<enemiesRBConstraints.Length; i++)
+        enemiesArray = FindObjectsOfType<Enemy>();
+        for (int i = 0; i < enemiesArray.Length; i++)
         {
-            enemiesRBConstraints[i] = RigidbodyConstraints2D.None;
+            enemiesArray[i].playerIsPoweredUp = false;
+
         }
-        
+
         currentSpeed = speedNormal;
         
         

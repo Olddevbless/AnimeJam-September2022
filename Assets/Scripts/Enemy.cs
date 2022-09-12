@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     GameManager gameManager;
     [SerializeField] float yOffset;
     [SerializeField] float xOffset;
+    public bool playerIsPoweredUp;
     void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -19,7 +20,10 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed*Time.deltaTime);
+        if (!playerIsPoweredUp)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed * Time.deltaTime);
+        }
         if (transform.position.y > yOffset)
         {
             transform.position = new Vector3(transform.position.x, yOffset);
