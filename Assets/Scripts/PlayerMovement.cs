@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        cam.transform.position = new Vector3(transform.position.x,transform.position.y,-10f);
         if (powerupCharge >= 3 && Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(PowerUp());
