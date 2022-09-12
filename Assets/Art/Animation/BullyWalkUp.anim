@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bully1&2WalkUp
+  m_Name: BullyWalkUp
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 0f0f785d80b5de2418c7bd3e70322176, type: 2}
+      value: {fileID: 5291450084983991784, guid: 873497ba66234444d99f0ba512d8675e, type: 3}
     - time: 0.6666667
-      value: {fileID: 21300000, guid: a2a3302fcb8df724a8f24163d1a6c3e1, type: 2}
+      value: {fileID: -7557347655417659230, guid: 873497ba66234444d99f0ba512d8675e, type: 3}
     - time: 1.3333334
-      value: {fileID: 21300000, guid: 50a9fd7fa753360489e0a243a239b1df, type: 2}
+      value: {fileID: -6610134436926062741, guid: 873497ba66234444d99f0ba512d8675e, type: 3}
     - time: 2
-      value: {fileID: 21300000, guid: 52af44d8bfa047d458ae605c74fcce88, type: 2}
+      value: {fileID: 346819273003854398, guid: 873497ba66234444d99f0ba512d8675e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 0f0f785d80b5de2418c7bd3e70322176, type: 2}
-    - {fileID: 21300000, guid: a2a3302fcb8df724a8f24163d1a6c3e1, type: 2}
-    - {fileID: 21300000, guid: 50a9fd7fa753360489e0a243a239b1df, type: 2}
-    - {fileID: 21300000, guid: 52af44d8bfa047d458ae605c74fcce88, type: 2}
+    - {fileID: 5291450084983991784, guid: 873497ba66234444d99f0ba512d8675e, type: 3}
+    - {fileID: -7557347655417659230, guid: 873497ba66234444d99f0ba512d8675e, type: 3}
+    - {fileID: -6610134436926062741, guid: 873497ba66234444d99f0ba512d8675e, type: 3}
+    - {fileID: 346819273003854398, guid: 873497ba66234444d99f0ba512d8675e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

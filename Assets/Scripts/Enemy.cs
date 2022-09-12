@@ -13,10 +13,13 @@ public class Enemy : MonoBehaviour
     public bool playerIsPoweredUp;
     [SerializeField] Animator bullyAnimator;
     [SerializeField] float yDistanceMax;
-    [SerializeField] float yDisatnceMin;
+    [SerializeField] float yDistanceMin;
     [SerializeField] float playerBullyYDistance;
+    [SerializeField] Transform enemyModel;
     void Awake()
     {
+        
+        enemyModel = GetComponentInChildren<Transform>();
         gameManager = FindObjectOfType<GameManager>();
         player = FindObjectOfType<PlayerMovement>().gameObject;
     }
@@ -24,7 +27,8 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerBullyYDistance = Mathf.Abs(player.transform.position.y) + Mathf.Abs(transform.position.y);
+        enemyModel.transform.rotation = Quaternion.Euler(0,0,0);
+        playerBullyYDistance = player.transform.position.y - transform.position.y;
         if (!playerIsPoweredUp)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed * Time.deltaTime);
@@ -45,20 +49,20 @@ public class Enemy : MonoBehaviour
         {
             transform.position = new Vector3(-xOffset, transform.position.y);
         }
-
-        if (player.transform.position.x< transform.position.x )
+        
+        if (player.transform.position.x< transform.position.x && playerBullyYDistance<yDistanceMax&& playerBullyYDistance>yDistanceMin)
         {
             bullyAnimator.SetInteger("BullyRotation", 4);
         }
-        if (player.transform.position.x > transform.position.x)
+        if (player.transform.position.x > transform.position.x && playerBullyYDistance < yDistanceMax && playerBullyYDistance > yDistanceMin)
         {
             bullyAnimator.SetInteger("BullyRotation", 2);
         }
-        if (player.transform.position.y < transform.position.y)
+        if (playerBullyYDistance< - yDistanceMax)
         {
             bullyAnimator.SetInteger("BullyRotation", 3);
         }
-        if (player.transform.position.y > transform.position.y)
+        if (playerBullyYDistance>yDistanceMax)
         {
             bullyAnimator.SetInteger("BullyRotation", 1);
         }
