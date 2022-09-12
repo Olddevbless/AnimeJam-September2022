@@ -1,0 +1,862 @@
+fileFormatVersion: 2
+guid: 873497ba66234444d99f0ba512d8675e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -431821101795967738
+    second: bullies one and two_0
+  - first:
+      213: 2016007386055525926
+    second: bullies one and two_1
+  - first:
+      213: -6279260382841689207
+    second: bullies one and two_2
+  - first:
+      213: -7546014515689140123
+    second: bullies one and two_3
+  - first:
+      213: 2638208244432508818
+    second: bullies one and two_4
+  - first:
+      213: 7075160992484691987
+    second: bullies one and two_5
+  - first:
+      213: 9212886873500342608
+    second: bullies one and two_6
+  - first:
+      213: 3107138631330903595
+    second: bullies one and two_7
+  - first:
+      213: 6043478028625423333
+    second: bullies one and two_8
+  - first:
+      213: 4804672483513832514
+    second: bullies one and two_9
+  - first:
+      213: 5202449219405613943
+    second: bullies one and two_10
+  - first:
+      213: -8285973464950639183
+    second: bullies one and two_11
+  - first:
+      213: 5291450084983991784
+    second: bullies one and two_12
+  - first:
+      213: -7557347655417659230
+    second: bullies one and two_13
+  - first:
+      213: -6610134436926062741
+    second: bullies one and two_14
+  - first:
+      213: 346819273003854398
+    second: bullies one and two_15
+  - first:
+      213: 2811329613524559291
+    second: bullies one and two_16
+  - first:
+      213: 6367200950099646970
+    second: bullies one and two_17
+  - first:
+      213: -857574214299575837
+    second: bullies one and two_18
+  - first:
+      213: 5408853754391128897
+    second: bullies one and two_19
+  - first:
+      213: 2085304753200174084
+    second: bullies one and two_20
+  - first:
+      213: -7651194660906408721
+    second: bullies one and two_21
+  - first:
+      213: 3800862409147254707
+    second: bullies one and two_22
+  - first:
+      213: 1511201296738641887
+    second: bullies one and two_23
+  - first:
+      213: -4538345671848274778
+    second: bullies one and two_24
+  - first:
+      213: -6129848054033573994
+    second: bullies one and two_25
+  - first:
+      213: 2469044053186104225
+    second: bullies one and two_26
+  - first:
+      213: 4765892022254615772
+    second: bullies one and two_27
+  - first:
+      213: -3042688533234316905
+    second: bullies one and two_28
+  - first:
+      213: -164503242665705499
+    second: bullies one and two_29
+  - first:
+      213: 6139391949804811487
+    second: bullies one and two_30
+  - first:
+      213: 6692478351284922106
+    second: bullies one and two_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bullies one and two_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 268
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dfeeceefcd10af0800000000000000
+      internalID: -431821101795967738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 268
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626476e490c4afb10800000000000000
+      internalID: 2016007386055525926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 268
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ba98463f59bd8a0800000000000000
+      internalID: -6279260382841689207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 268
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560586a47cb274790800000000000000
+      internalID: -7546014515689140123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 236
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29718e4ab6ccc9420800000000000000
+      internalID: 2638208244432508818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 236
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31010c5df65003260800000000000000
+      internalID: 7075160992484691987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 236
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059d8daaccfbadf70800000000000000
+      internalID: 9212886873500342608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 236
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b263f547f16ce1b20800000000000000
+      internalID: 3107138631330903595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 204
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eba8105f3fbed350800000000000000
+      internalID: 6043478028625423333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 204
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2449fe1ea20ada240800000000000000
+      internalID: 4804672483513832514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_10
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 204
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b0ea45000d23840800000000000000
+      internalID: 5202449219405613943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_11
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 204
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5fd4bd80f420d80800000000000000
+      internalID: -8285973464950639183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 172
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed6e2621d10f6940800000000000000
+      internalID: 5291450084983991784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 172
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a003b21958ee1790800000000000000
+      internalID: -7557347655417659230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_14
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 172
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ff17960c51444a0800000000000000
+      internalID: -6610134436926062741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_15
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 172
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a67a09a4620d400800000000000000
+      internalID: 346819273003854398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_16
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 140
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5eaa07369d30720800000000000000
+      internalID: 2811329613524559291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 140
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9183c7787dc5850800000000000000
+      internalID: 6367200950099646970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_18
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 140
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e99324bbc84914f0800000000000000
+      internalID: -857574214299575837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_19
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 140
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b658015db101b40800000000000000
+      internalID: 5408853754391128897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 108
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4041ee6ef9d70fc10800000000000000
+      internalID: 2085304753200174084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_21
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 108
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4ee416efe71d590800000000000000
+      internalID: -7651194660906408721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_22
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 108
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b78b5929306fb430800000000000000
+      internalID: 3800862409147254707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_23
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 108
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7673c929dd8f410800000000000000
+      internalID: 1511201296738641887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_24
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 76
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a45d8918ae8401c0800000000000000
+      internalID: -4538345671848274778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_25
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 76
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69795341ca76eeaa0800000000000000
+      internalID: -6129848054033573994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 76
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abc2fc1c7ec34220800000000000000
+      internalID: 2469044053186104225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_27
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 76
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcba502b89d32240800000000000000
+      internalID: 4765892022254615772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_28
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 44
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7990a6e56e236c5d0800000000000000
+      internalID: -3042688533234316905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_29
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 44
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efb2802c2197bdf0800000000000000
+      internalID: -164503242665705499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_30
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 44
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd432015370833550800000000000000
+      internalID: 6139391949804811487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullies one and two_31
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 44
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6645b2a9570ec50800000000000000
+      internalID: 6692478351284922106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

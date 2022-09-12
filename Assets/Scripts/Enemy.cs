@@ -11,6 +11,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] float yOffset;
     [SerializeField] float xOffset;
     public bool playerIsPoweredUp;
+    [SerializeField] Animator bullyAnimator;
+    [SerializeField] float yDistanceMax;
+    [SerializeField] float yDisatnceMin;
+    [SerializeField] float playerBullyYDistance;
     void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -20,6 +24,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerBullyYDistance = Mathf.Abs(player.transform.position.y) + Mathf.Abs(transform.position.y);
         if (!playerIsPoweredUp)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed * Time.deltaTime);
@@ -39,6 +44,23 @@ public class Enemy : MonoBehaviour
         if (transform.position.x < -xOffset)
         {
             transform.position = new Vector3(-xOffset, transform.position.y);
+        }
+
+        if (player.transform.position.x< transform.position.x )
+        {
+            bullyAnimator.SetInteger("BullyRotation", 4);
+        }
+        if (player.transform.position.x > transform.position.x)
+        {
+            bullyAnimator.SetInteger("BullyRotation", 2);
+        }
+        if (player.transform.position.y < transform.position.y)
+        {
+            bullyAnimator.SetInteger("BullyRotation", 3);
+        }
+        if (player.transform.position.y > transform.position.y)
+        {
+            bullyAnimator.SetInteger("BullyRotation", 1);
         }
     }
 
